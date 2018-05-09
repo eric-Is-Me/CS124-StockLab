@@ -12,7 +12,7 @@ void loginCB(Fl_Widget*)
     Subscriber loginsub; 
     loginsub.setName(loginU->value());
     loginsub.setPassword(loginP->value());
-    if (login(loginsub) != -1)
+    if (login(loginsub) != -1)              //What is the login function? It takes one parameter and returns an integer value but where is it created?
     {
         if(login(loginsub) == 0) fl_alert("Incorrect Password, please re-enter");
         else
